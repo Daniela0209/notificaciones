@@ -1,0 +1,59 @@
+.button{
+  background-color: transparent;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  margin-left: 800px;
+  
+}
+.campana_notificacion{
+background-color: red;
+color: royalblue;
+}
+
+
+.Modal{
+  position: absolute;
+  width: 900px;
+  height: 500px;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  
+}
+
+
+.Modal header{
+  background:#F0950E;
+  color: #fff;
+ 
+}
+
+
+.button_cerrar{
+  background-color: transparent;
+  color: black;
+  border-color: black;
+  border: 2px solid;
+  border-radius: 30px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-left: 730px;
+ margin-bottom: 20px;
+ margin-top: 10px;
+  
+}
+
+
+.App{
+  background: #FDC830;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+
+width: 218.6vh;
+height: 100vh;
+}
