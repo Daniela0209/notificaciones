@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Modal, Button } from '@material-ui/core';
+import { Modal } from '@material-ui/core';
 import './scss/app.scss';
 import campana from "../images/campana.svg";
 import { render } from "@testing-library/react";
@@ -27,20 +27,21 @@ function ModalCampana() {
     </div>
   );
 
+    // eslint-disable-next-line no-lone-blocks
     render(); {
 
         return (
             <div className="App">
         
-              <button className='button'  onClick={()=>abrirCerrarModal()} campanaIcon><img
-               src={campana}
-              /></button>
+              <button className='button'  onClick={()=>abrirCerrarModal()} campanaIcon>
+                <img src={campana}  />
+              </button>
         
               <Modal open={modal} onClose={abrirCerrarModal}>
                 {body}
               </Modal>
             </div>
-  )
+            )
         
     }
 
