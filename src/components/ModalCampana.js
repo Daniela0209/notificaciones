@@ -1,18 +1,21 @@
 import React, { useState } from "react";
-import { Modal } from '@material-ui/core';
+import { Modal} from '@material-ui/core';
 import './scss/app.scss';
-import campana from "../images/campana.svg";
-import { render } from "@testing-library/react";
+import campana from "../images/notifications.svg";
+import NotificationsList from "./NotificationList"
 
 
 
-
-function ModalCampana() {
+function ModalCampana(props) {
 
   const [ modal, setModal] = useState(false);
 
   const abrirCerrarModal = () => {
     setModal(!modal);
+  }
+
+  const image = () =>{
+    (props.state.data.viewed==false)?<img src={campana} alt="campana"/>:<img src={campana} alt="campana"/>;
   }
 
 
@@ -22,28 +25,25 @@ function ModalCampana() {
         <header><strong>Notificaciones</strong>
         <button className="button_cerrar" onClick={()=>abrirCerrarModal()}>X</button>
         </header>
-       
+        <NotificationsList notifications={props.state} /> 
       </div>
     </div>
-  );
-
-    // eslint-disable-next-line no-lone-blocks
-    render(); {
+  ); 
 
         return (
             <div className="App">
         
               <button className='button'  onClick={()=>abrirCerrarModal()} campanaIcon>
-                <img src={campana}  />
-              </button>
+                <img src={campana} alt="campana"/>
+                </button>
         
               <Modal open={modal} onClose={abrirCerrarModal}>
                 {body}
               </Modal>
             </div>
-            )
+  )
         
-    }
+
 
 }
 
