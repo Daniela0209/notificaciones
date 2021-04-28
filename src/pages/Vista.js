@@ -1,5 +1,5 @@
 import React from 'react';
-import Modal from "../components/ModalCampana";
+import Modal from "../components/ModalBell";
 
 
 class Vista extends React.Component{
@@ -17,21 +17,21 @@ class Vista extends React.Component{
             name: 'Notification Proyect',
             typeN: 'OKR',
             detail: '30',
-            viewed:'false'
+            viewed:'true'
           },
           {
             id: 'd00d3614-101a-44ca-b6c2-0be075aeed3s',
             name: 'Welcome',
             typeN: 'KR',
             detail: '70',
-            viewed:'false'
+            viewed:'true'
           },
           {
             id: 'd00d3614-101a-44ca-b6c2-0be075aeed3ñ',
             name: 'Email Enviado', //Subject
             typeN: 'Send Email',
             detail: 'Nuevo Email Enviado',
-            viewed:'false'
+            viewed:'true'
           },
         ],
       };
