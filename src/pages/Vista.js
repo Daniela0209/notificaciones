@@ -6,31 +6,45 @@ class Vista extends React.Component{
     state = {
         data: [
           {
-            id: '2de30c42-9deb-40fc-a41f-05e62b5939a7',
-            name: 'User',
-            typeN: 'Welcome',
-            detail: 'Bienvenido User',
-            viewed:'true'
-          },
-          {
-            id: 'd00d3614-101a-44ca-b6c2-0be075aeed3d',
+            id: 'd00d3614-101a-44ca-b6c2-0be075aeed3a',
             name: 'Notification Proyect',
             typeN: 'OKR',
             detail: '30',
             viewed:'true'
           },
           {
-            id: 'd00d3614-101a-44ca-b6c2-0be075aeed3s',
-            name: 'Welcome',
+            id: 'd00d3614-101a-44ca-b6c2-0be075aeed3b',
+            name: 'Notification Proyect',
+            typeN: 'OKR',
+            detail: '70',
+            viewed:'true'
+          },
+          {
+            id: 'd00d3614-101a-44ca-b6c2-0be075aeed3b',
+            name: 'Notification Proyect',
+            typeN: 'OKR',
+            detail: '100 Or Finished',
+            viewed:'true'
+          },
+          {
+            id: 'd00d3614-101a-44ca-b6c2-0be075aeed3a',
+            name: 'Notification Proyect',
+            typeN: 'KR',
+            detail: '30',
+            viewed:'true'
+          },
+          {
+            id: 'd00d3614-101a-44ca-b6c2-0be075aeed3b',
+            name: 'Notification Proyect',
             typeN: 'KR',
             detail: '70',
             viewed:'true'
           },
           {
-            id: 'd00d3614-101a-44ca-b6c2-0be075aeed3ñ',
-            name: 'Email Enviado', //Subject
-            typeN: 'Send Email',
-            detail: 'Nuevo Email Enviado',
+            id: 'd00d3614-101a-44ca-b6c2-0be075aeed3b',
+            name: 'Notification Proyect ',
+            typeN: 'KR',
+            detail: '100 Or Finished',
             viewed:'true'
           },
         ],

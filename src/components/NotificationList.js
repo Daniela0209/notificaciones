@@ -8,14 +8,14 @@ class NotificationsListItem extends React.Component {
   render() {
 
     return (
-      <div className="NotifsListItem">
+      <div className = "NotifsListItem" id = "NotifsListItem">
         <img
-          className="NotifsListItem__avatar"
+          className="NotifsListItem__avatar" id = "NotifsListItem__avatar"
           src = {image}
           alt={`${this.props.notif.name} ${this.props.notif.typeN}`}
         />
 
-        <div className = "Detail">
+        <div className = "Detail" id = "Detail">
           <strong>
             {this.props.notif.name} 
             <br/>
@@ -26,9 +26,9 @@ class NotificationsListItem extends React.Component {
 
         </div>
     
-      <button className="button_close">
+      <button className = "button_close" id = "button_close">
       <img
-          className="NotifsListItem__close"
+          className = "NotifsListItem__close" id = "NotifsListItem__close"
           src = {closeImg}
           alt="Clear Notification"
           />
@@ -42,8 +42,8 @@ class NotificationsListItem extends React.Component {
 class NotificationsList extends React.Component {
   render() {
     return (
-      <div className="NotifsList">
-        <ul className="list-unstyled">
+      <div className = "NotifsList" id = "NotifsList">
+        <ul className = "list-unstyled" id = "list-unstyled">
           {this.props.notifications.map(notif => {
             return (
               <li key={notif.id}>
