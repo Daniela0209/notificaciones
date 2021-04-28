@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Modal} from '@material-ui/core';
 import './scss/app.scss';
 import campana from "../images/notifications.svg";
+import campana2 from "../images/notifications_active.svg";
 import NotificationsList from "./NotificationList"
 
 
@@ -14,10 +15,10 @@ function ModalCampana(props) {
     setModal(!modal);
   }
 
-  const image = () =>{
-    (props.state.data.viewed==false)?<img src={campana} alt="campana"/>:<img src={campana} alt="campana"/>;
-  }
+  const views = props.state.map(notif => notif.viewed)
+  const view = views.toString().includes(false).toString();
 
+  const notificationIcon = (view==="true")? campana2 : campana;
 
   const body = (
     <div className="Modal">
@@ -34,7 +35,7 @@ function ModalCampana(props) {
             <div className="App">
         
               <button className='button'  onClick={()=>abrirCerrarModal()} campanaIcon>
-                <img src={campana} alt="campana"/>
+                <img src={notificationIcon} alt="campana"/>
                 </button>
         
               <Modal open={modal} onClose={abrirCerrarModal}>
