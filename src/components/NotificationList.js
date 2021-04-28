@@ -1,6 +1,5 @@
 import React from 'react';
-
-import './styles/NotificationList.css';
+import './scss/NotificationList.scss';
 import image from '../images/orange.png';
 import closeImg from '../images/close.svg';
 
@@ -27,11 +26,13 @@ class NotificationsListItem extends React.Component {
 
         </div>
     
-        <img
+      <button className="button_close">
+      <img
           className="NotifsListItem__close"
           src = {closeImg}
           alt="Clear Notification"
           />
+      </button>
         
       </div>
     );
