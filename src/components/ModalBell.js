@@ -34,7 +34,7 @@ function ModalBell(props) {
         return (
             <div className="App">
         
-              <button className='button'  onClick={()=>open_close_Modal()} bellIcon>
+              <button className='button'  onClick={()=>open_close_Modal()}>
                 <img src={notificationIcon} alt="bell"/>
                 </button>
         
