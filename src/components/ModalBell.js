@@ -21,10 +21,10 @@ function ModalBell(props) {
   const notificationIcon = (view==="true")? bell2 : bell;
 
   const body = (
-    <div className="Modal">
+    <div className="Modal" id="Modal">
       <div align="center">
         <header id="header"><strong>Notificaciones</strong>
-        <button className="button_cerrar" onClick={()=>open_close_Modal()}>X</button>
+        <button className="button_cerrar" id="button_cerrar" onClick={()=>open_close_Modal()}>X</button>
         </header>
         <NotificationsList notifications={props.state} /> 
       </div>
@@ -32,9 +32,9 @@ function ModalBell(props) {
   ); 
 
         return (
-            <div className="App">
+            <div className="App" id="App">
         
-              <button className='button'  onClick={()=>open_close_Modal()}>
+              <button className='button' id="button"  onClick={()=>open_close_Modal()}>
                 <img src={notificationIcon} alt="bell"/>
                 </button>
         
