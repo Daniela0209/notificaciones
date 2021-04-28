@@ -23,7 +23,7 @@ function ModalCampana(props) {
   const body = (
     <div className="Modal">
       <div align="center">
-        <header><strong>Notificaciones</strong>
+        <header id="header"><strong>Notificaciones</strong>
         <button className="button_cerrar" onClick={()=>abrirCerrarModal()}>X</button>
         </header>
         <NotificationsList notifications={props.state} /> 

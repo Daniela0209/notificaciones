@@ -38,8 +38,7 @@ class Vista extends React.Component{
     render(){
         return(
             <div>
-            <Modal state={this.state.data}/>
-            <h1>Bienvenidos</h1>    
+            <Modal state={this.state.data}/>    
             </div>
             
         )
