@@ -44,7 +44,7 @@ class Vista extends React.Component{
             id: 'd00d3614-101a-44ca-b6c2-0be075aeed3b',
             name: 'Notification Proyect ',
             typeN: 'KR',
-            detail: '100 Or Finished',
+            detail: '100',
             viewed:'true'
           },
         ],
