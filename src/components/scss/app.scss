@@ -3,7 +3,7 @@
   color: #fff;
   border: 0;
   cursor: pointer;
-  margin-left: 800px;
+  margin-left: 80%;
   
 }
 
@@ -11,8 +11,8 @@
 
 .Modal{
   position: absolute;
-  width: 900px;
-  height: 500px;
+  width: 80%;
+  height: 80%;
   background-color: white;
   top: 50%;
   left: 50%;
@@ -25,12 +25,21 @@
 .Modal header{
   background:#F0950E;
   color: #fff;
-  
+  width: 100%;
+  height: 45px;
+  text-align: justify;
+  padding-top: 8px;
 }
 
+header strong{
+  display: inline-block;
+  width: 90%;
+  text-align: center;
 
+}
 
 .button_cerrar{
+  display: inline-block;
   background-color: transparent;
   color: black;
   border-color: black;
@@ -39,9 +48,7 @@
   width: 30px;
   height: 30px;
   cursor: pointer;
-  margin-left: 730px;
- margin-bottom: 20px;
- margin-top: 10px;
+  margin: auto; 
   
 }
 
@@ -50,6 +57,6 @@
   background: #FDC830;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
-  width: 218.6vh;
+  width: 100%;
   height: 100vh;
 }
