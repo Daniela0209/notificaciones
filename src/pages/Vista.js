@@ -1,5 +1,5 @@
 import React from 'react';
-import Modal from "../components/ModalCampana";
+import Modal from "../components/ModalBell";
 
 
 class Vista extends React.Component{
