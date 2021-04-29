@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Modal} from '@material-ui/core';
-import './scss/app.scss';
+import './scss/ModalBell.scss';
 import bell from "../images/notifications.svg";
 import bell2 from "../images/notifications_active.svg";
 import NotificationsList from "./NotificationList"

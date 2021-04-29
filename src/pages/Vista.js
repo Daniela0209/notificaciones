@@ -10,7 +10,7 @@ class Vista extends React.Component{
             name: 'Notification Proyect',
             typeN: 'OKR',
             detail: '30',
-            viewed:'true'
+            viewed:'true '
           },
           {
             id: 'd00d3614-101a-44ca-b6c2-0be075aeed3b',

@@ -2,6 +2,7 @@ import React from "react";
 import Vista from "./pages/Vista";
 import firebase from 'firebase/app';
 
+
 firebase.initializeApp({
   apiKey: "AIzaSyBHq9LCXTvKWv8a5giOFY1T7cI3ETYnSW4",
   authDomain: "notification-d3d10.firebaseapp.com",
